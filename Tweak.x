@@ -1,4 +1,4 @@
 #include <dlfcn.h>
 %ctor {
-	dlopen("/usr/lib/Geode.dylib", RTLD_LAZY);
+	dlopen("/usr/lib/Geode.ios.dylib", RTLD_LAZY);
 }
