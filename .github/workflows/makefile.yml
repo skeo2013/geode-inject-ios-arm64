@@ -22,8 +22,10 @@ jobs:
 
     - name: Run distcheck
       run: make distcheck
-
-                  - name: Download a Build Artifact
+      
+      name: Download a Build Artifact
+      runs on: ubuntu-latest
+      steps:
   uses: actions/download-artifact@v4.2.1
   with:
     # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
